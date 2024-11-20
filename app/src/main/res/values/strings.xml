@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Theozunime Archive App</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="seasonal_anime">Seasonal Anime</string>
+    <string name="home">Home</string>
+    <string name="favorite_anime">Favorite Anime</string>
+    <string name="view_error_message">Ooppss!! Something went wrong.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

@@ -1,5 +1,9 @@
 package com.izzulhaqfs.theozunimearchiveapp.core.domain.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Anime(
     val id: Int,
     val title: String,
@@ -22,4 +26,4 @@ data class Anime(
     val averageEpisodeDuration: Int?,
     val rating: String?,
     val studios: String?
-)
+): Parcelable
