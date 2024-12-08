@@ -25,5 +25,6 @@ data class Anime(
     val source: String?,
     val averageEpisodeDuration: Int?,
     val rating: String?,
-    val studios: String?
+    val studios: String?,
+    val isFavorite: Boolean
 ): Parcelable

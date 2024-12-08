@@ -24,6 +24,7 @@ object DataMapper {
                     if (!it.node.genres.isNullOrEmpty()) {
                         for (item in it.node.genres) {
                             append(item.name)
+                            append(", ")
                         }
                     }
                 },
@@ -39,6 +40,7 @@ object DataMapper {
                     if (!it.node.studios.isNullOrEmpty()) {
                         for (item in it.node.studios) {
                             append(item.name)
+                            append(", ")
                         }
                     }
                 }
@@ -72,7 +74,8 @@ object DataMapper {
                 source = it.source,
                 averageEpisodeDuration = it.averageEpisodeDuration,
                 rating = it.rating,
-                studios = it.studios
+                studios = it.studios,
+                isFavorite = it.isFavorite
             )
             animeList.add(anime)
         }

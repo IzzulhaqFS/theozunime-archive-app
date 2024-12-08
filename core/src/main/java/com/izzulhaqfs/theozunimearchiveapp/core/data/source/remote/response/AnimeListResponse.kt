@@ -77,8 +77,10 @@ data class Node(
 data class Paging(
 
 	@field:SerializedName("next")
+	val next: String,
+
+	@field:SerializedName("previous")
 	val previous: String? = null,
-	val next: String
 )
 
 data class GenresItem(
