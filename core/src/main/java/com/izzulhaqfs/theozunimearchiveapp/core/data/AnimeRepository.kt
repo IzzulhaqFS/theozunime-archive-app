@@ -33,7 +33,7 @@ class AnimeRepository(
                 localDataSource.insertAnime(animeList)
             }
 
-            override fun shouldFetch(data: List<Anime>?): Boolean = data.isNullOrEmpty()
+            override fun shouldFetch(data: List<Anime>?): Boolean = true
         }.asFlow()
     }
 
@@ -54,7 +54,7 @@ class AnimeRepository(
                 localDataSource.insertAnime(animeList)
             }
 
-            override fun shouldFetch(data: List<Anime>?): Boolean = data.isNullOrEmpty()
+            override fun shouldFetch(data: List<Anime>?): Boolean = true
         }.asFlow()
     }
 
