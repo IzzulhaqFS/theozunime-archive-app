@@ -37,4 +37,5 @@ dependencies {
     implementation(project(":app"))
     implementation(project(":core"))
     implementation(libs.constraintlayout)
+    implementation(libs.androidx.junit.ktx)
 }

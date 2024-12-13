@@ -31,7 +31,10 @@ interface ApiService {
         season: String,
 
         @Query("fields")
-        fields: String
+        fields: String,
+
+        @Query("limit")
+        limit: Int,
     ): AnimeListResponse
 
     @GET("v2/anime/ranking")
@@ -43,6 +46,9 @@ interface ApiService {
         rankingType: String,
 
         @Query("fields")
-        fields: String
+        fields: String,
+
+        @Query("limit")
+        limit: Int,
     ): AnimeListResponse
 }
