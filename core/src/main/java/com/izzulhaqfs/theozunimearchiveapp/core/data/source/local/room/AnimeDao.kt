@@ -22,7 +22,7 @@ interface AnimeDao {
     @Query("SELECT * FROM anime ORDER BY mean DESC LIMIT 100")
     fun getAnimeRanking(): Flow<List<AnimeEntity>>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertAnime(animes: List<AnimeEntity>)
 
     @Update

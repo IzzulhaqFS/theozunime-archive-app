@@ -1,5 +1,7 @@
 package com.izzulhaqfs.theozunimearchiveapp
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -55,6 +57,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_season -> {
                 fragment = SeasonalAnimeFragment()
                 title = getString(R.string.seasonal_anime)
+            }
+            R.id.nav_favorite -> {
+                val uri = Uri.parse("theozunimearchiveapp://favorite")
+                startActivity(Intent(Intent.ACTION_VIEW, uri))
             }
         }
         if (fragment != null) {

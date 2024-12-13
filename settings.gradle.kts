@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Theozunime Archive App"
 include(":app")
 include(":core")
+include(":favorite")
